@@ -1,5 +1,6 @@
-public class Main {
+public class LinearEquationRunner {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        LinearEquationLogic tracker = new LinearEquationLogic();
+        tracker.start();
     }
 }
