@@ -14,6 +14,13 @@ public class LinearEquation {
         coord2XValue = Integer.parseInt(coord2.substring(1,coord2.indexOf(",")));
         coord2YValue = Integer.parseInt(coord2.substring(coord2.indexOf(",")+2, coord2.length()-1));
     }
+
+    public LinearEquation (int x1, int y1, int x2, int y2) {
+        coord1XValue = x1;
+        coord1YValue = y1;
+        coord2XValue = x2;
+        coord2YValue = y2;
+    }
     public double distance() {
         return roundedToHundredth(Math.sqrt(Math.pow(coord2XValue - coord1XValue, 2) + Math.pow(coord2YValue - coord1YValue, 2)));
     }
